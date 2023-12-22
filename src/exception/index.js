@@ -3,6 +3,7 @@ const logger = require('../logger')
 
 module.exports = (() => {
   process.on('unhandledRejection', p => {
+    console.log('unhandledRejection',p)
     throw p
   })
   process.on('rejectionHandled', p => {
