@@ -1,0 +1,52 @@
+{
+  "name": "lc-node-full-admin",
+  "version": "1.0.0",
+  "description": "简易的配置式的接口层权限验证，参数校验，日志记录的node的web服务。",
+  "author": "Linc",
+  "main": "src/app.js",
+  "license": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sulirlinc/lc-node-full-admin"
+  },
+  "keywords": [
+    "lc-js-common",
+    "winston-transport",
+    "pg",
+    "pg-pool"
+  ],
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-winston": "^4.0.0",
+    "fs": "^0.0.1-security",
+    "jose": "^1.10.1",
+    "jsrsasign": "^8.0.15",
+    "lc-js-common": "latest",
+    "lc-pg-dao": "latest",
+    "lc-pg-winston-transport": "latest",
+    "lc-schedule-by-pg": "^1.0.13",
+    "morgan": "^1.9.1",
+    "node-os-utils": "^1.0.7",
+    "pg": "^7.12.1",
+    "pg-pool": "^2.0.7",
+    "triple-beam": "latest",
+    "winston": "^3.2.1",
+    "winston-daily-rotate-file": "^4.2.1",
+    "winston-transport": "latest"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1",
+    "pkg": "^4.4.0",
+    "should": "^13.2.3",
+    "supertest": "^4.0.2"
+  },
+  "scripts": {
+    "start": "nodemon src/app.js",
+    "pkg-win": "pkg src/app.js -t latest-win-x64  --out-path=dist/win",
+    "test": "jest --coverage",
+    "coverage": "jest --coverage"
+  }
+}

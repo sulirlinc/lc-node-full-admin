@@ -1,0 +1,18 @@
+{
+  "database": {
+    "pgConfig": {
+      "user": "postgres",
+      "password": "123123",
+      "host": "127.0.0.1",
+      "port": "5432",
+      "database": "full-admin"
+    }
+  },
+  "logger": {
+    "path": "./"
+  },
+  "server": {
+    "port": 8080,
+    "ip": "127.0.0.1"
+  }
+}
